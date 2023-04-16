@@ -12,5 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @description
  */
 public interface DishService extends IService<Dish> {
-    public void addDishAndFlavor(DishDTO dishDto);
+    void addDishAndFlavor(DishDTO dishDto);
+    DishDTO getDishAndFlavor(Long id);
+    void updateDishAndFlavor(DishDTO dishDto);
 }
