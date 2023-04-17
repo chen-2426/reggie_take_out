@@ -2,6 +2,7 @@ package com.reggie.commons;
 
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -12,7 +13,7 @@ import java.util.Map;
  * @description 一个用于通用的结果封装类
  */
 @Data
-public class R<T> {
+public class R<T> implements Serializable {
     private Integer code;
     private String msg;
     private T data;

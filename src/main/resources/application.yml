@@ -20,6 +20,9 @@ spring:
     multipart:
       max-file-size: -1
       max-request-size: -1
+  cache:
+    redis:
+      time-to-live: 180000
 mybatis-plus:
   configuration:
     #下划线映射驼峰命名法
